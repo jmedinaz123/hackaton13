@@ -1,0 +1,480 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.letraCard {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  color: #000000;
+  text-align: center;
+}
+
+.letraCard--Nombre {
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.letraCard--Telf, .letraCard--Corr, .letraCard--Pais {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.letraCard--About {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.letraCard--icono {
+  font-size: 9px;
+  line-height: 11px;
+}
+
+.letraCard--marca {
+  font-size: 26px;
+  line-height: 42px;
+}
+
+.letraCard--agregar {
+  font-size: 12px;
+  line-height: 14px;
+  cursor: pointer;
+}
+
+.card {
+  width: 240px;
+  height: 328px;
+  border: 1px solid #A1A1A1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 25px 0 25px 0px;
+  position: relative;
+}
+
+.card:hover {
+  -webkit-filter: drop-shadow(0px 0px 8px #000000);
+          filter: drop-shadow(0px 0px 8px #000000);
+}
+
+.card-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+}
+
+.card-contenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 163px;
+  width: 211px;
+}
+
+.icono {
+  width: 16px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.icono--left {
+  left: 9px;
+}
+
+.icono--right {
+  right: 9px;
+}
+
+.icono-img {
+  width: 15px;
+  height: 16px;
+}
+
+.contenedorCard {
+  width: 1083px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contenedorCard-cabecera {
+  width: 100%;
+  height: 74px;
+  background-color: #E5E5E5;
+  padding: 0 20px 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modalContenedorCerrar {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ocultarModalCerrar {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modalCerrar {
+  background-color: white;
+  width: 469px;
+  height: 204px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.modalCerrar-imgX {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  height: 17px;
+  width: 17px;
+  cursor: pointer;
+}
+
+.modalCerrar-seccionBotones {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modalCerrar-btn {
+  width: 129px;
+  height: 41px;
+  background-color: #C4C4C4;
+  cursor: pointer;
+  border: none;
+  margin: 0 18px 0 18px;
+}
+
+.modalCerrar-btn--Cancelar {
+  text-align: center;
+}
+
+.modalCerrar-btn--Aceptars {
+  text-align: center;
+}
+
+.modalCerrar-titulo {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.modalContenedorEdit {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ocultarModalEdit {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modalEdit {
+  background-color: white;
+  width: 673px;
+  height: 507px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.modalEdit-sectitulo {
+  width: 619px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 21px;
+}
+
+.modalEdit-imgX {
+  height: 17px;
+  width: 17px;
+  cursor: pointer;
+}
+
+.modalEdit-secBotones {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 15px 0 13px 0;
+}
+
+.modalEdit-secForm {
+  width: 619px;
+  height: 444px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.modalEdit-secForm-Input, .modalEdit-secForm-Select {
+  width: 296px;
+  height: 53px;
+}
+
+.modalEdit-secForm-textArea {
+  width: 619px;
+  height: 185px;
+}
+
+.modalEdit-btn {
+  width: 129px;
+  height: 41px;
+  background-color: #C4C4C4;
+  cursor: pointer;
+  border: none;
+  margin: 0 18px 0 18px;
+}
+
+.modalEdit-btn--Cancelar {
+  text-align: center;
+}
+
+.modalEdit-btn--Aceptars {
+  text-align: center;
+}
+
+.modalContenedorCrear {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ocultarModalCrear {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modalCrear {
+  background-color: white;
+  width: 673px;
+  height: 507px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.modalCrear-sectitulo {
+  width: 619px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 21px;
+}
+
+.modalCrear-imgX {
+  height: 17px;
+  width: 17px;
+  cursor: pointer;
+}
+
+.modalCrear-secBotones {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 15px 0 13px 0;
+}
+
+.modalCrear-secForm {
+  width: 619px;
+  height: 444px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.modalCrear-secForm-Input, .modalCrear-secForm-Select {
+  width: 296px;
+  height: 53px;
+}
+
+.modalCrear-secForm-textArea {
+  width: 619px;
+  height: 185px;
+}
+
+.modalCrear-btn {
+  width: 129px;
+  height: 41px;
+  background-color: #C4C4C4;
+  cursor: pointer;
+  border: none;
+  margin: 0 18px 0 18px;
+}
+
+.modalCrear-btn--Cancelar {
+  text-align: center;
+}
+
+.modalCrear-btn--Aceptars {
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */

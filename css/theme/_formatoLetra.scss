@@ -1,0 +1,35 @@
+
+.letraCard{
+    font-family: $font-family_1;
+    font-style: $font-style_1;
+    font-weight: $font-weight_2;
+    color: $color1;
+    text-align: center;
+    &--Nombre{
+        font-size: 20px;
+        line-height: 23px;
+    }
+    &--Telf, &--Corr, &--Pais{
+        font-size: 16px;
+        line-height: 19px;
+    }
+    &--About{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    &--icono{
+        font-size: 9px;
+        line-height: 11px;
+    }
+    &--marca{
+        font-size: 32px;
+        line-height: 42px;
+		color: black;
+    }
+    &--agregar{
+        font-size: 22px;
+        line-height: 14px;
+        cursor: pointer;
+		color: green;
+    }
+}
